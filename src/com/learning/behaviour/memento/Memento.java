@@ -1,30 +1,31 @@
 package com.learning.behaviour.memento;
 
-import com.learning.behaviour.memento.model.Editor;
-import com.learning.behaviour.memento.model.History;
+import com.learning.behaviour.memento.models.Editor;
+import com.learning.behaviour.memento.models.History;
 
 public class Memento {
 
-    // The Memento pattern is concerned with the previous state of objects/
-    // This means that the patten is used when we want to save some state of an object, in case we want to restore the object to that state later on
+    // The Memento pattern is concerned with the previous state of objects.
+    // The patten is used when we want to save some state of an object, in case we want to restore the object to that state later on
 
     public static void main(String[] args) {
 
         Editor editor = new Editor();
         History history = new History();
 
-        editor.setContent("a");
+        editor.setState("a");
+        System.out.println("The current state is " + editor.getState() + ".");
         history.push(editor.createState());
 
-        editor.setContent("b");
+        editor.setState("b");
+        System.out.println("The current state is " + editor.getState() + ".");
         history.push(editor.createState());
 
-        editor.setContent("c");
-        history.push(editor.createState());
+        editor.setState("c");
+        System.out.println("The current state is " + editor.getState() + ".");
 
+        System.out.println("Restoring state now...");
         editor.restore(history.pop());
-
-        // resulting content is "b"
-        System.out.println(editor.getContent());
+        System.out.println("The current state is " + editor.getState() + ".");
     }
 }

@@ -1,10 +1,12 @@
-package com.learning.behaviour.memento.model;
+package com.learning.behaviour.memento.models;
 
 import java.util.ArrayList;
 import java.util.List;
 
 // Caretaker
 public class History {
+
+    // Takes care of the restoration process
 
     private List<EditorState> states = new ArrayList<EditorState>();
 
