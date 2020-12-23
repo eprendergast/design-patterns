@@ -1,4 +1,4 @@
-package com.learning.behaviour.memento.models;
+package com.learning.behaviour.memento.model;
 
 // Memento
 public class EditorState {

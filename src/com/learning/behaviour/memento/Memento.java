@@ -1,7 +1,7 @@
 package com.learning.behaviour.memento;
 
-import com.learning.behaviour.memento.models.Editor;
-import com.learning.behaviour.memento.models.History;
+import com.learning.behaviour.memento.model.Editor;
+import com.learning.behaviour.memento.model.History;
 
 public class Memento {
 

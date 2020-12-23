@@ -1,4 +1,4 @@
-package com.learning.behaviour.state.models;
+package com.learning.behaviour.state.model;
 
 // State
 public interface Tool {

@@ -1,8 +1,8 @@
 package com.learning.behaviour.state;
 
-import com.learning.behaviour.state.models.BrushTool;
-import com.learning.behaviour.state.models.Canvas;
-import com.learning.behaviour.state.models.SelectionTool;
+import com.learning.behaviour.state.model.impl.BrushTool;
+import com.learning.behaviour.state.model.Canvas;
+import com.learning.behaviour.state.model.impl.SelectionTool;
 
 public class State {
 
