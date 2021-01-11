@@ -5,7 +5,7 @@ import com.learning.creational.factory.model.Animal;
 public class Cow implements Animal {
 
     public void makeNoise() {
-       System.out.println("Mooooo!");
+       System.out.println("Oink!");
     }
 
 }
